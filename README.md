@@ -4,12 +4,12 @@
 
 #### Para instalar
 
-'''
+```
 npm install
-'''
+```
 
 #### Para ejecutar
 
-'''
+```
 npm run build:dev
-'''
+```
