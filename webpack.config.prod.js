@@ -6,7 +6,7 @@ module.exports = {
   entry: './js/app.js',
   output: {
     filename: '[contenthash].js',
-    path: path.resolve(__dirname, 'assets', 'scripts'),
+    path: path.resolve(__dirname, 'build', 'js'),
     publicPath: '/public/js',
   },
   devServer: {
