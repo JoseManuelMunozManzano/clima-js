@@ -66,8 +66,8 @@ function consultarAPI(ciudad, pais) {
   spinner();
 
   fetch(url)
-    .then(respuesta => respuesta.json())
-    .then(datos => {
+    .then((respuesta) => respuesta.json())
+    .then((datos) => {
       // Limpiar el HTML previo
       limpiarHTML();
 
