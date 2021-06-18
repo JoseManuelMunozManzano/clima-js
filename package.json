@@ -6,7 +6,7 @@
   "homepage": "http://JoseManuelMunozManzano.github.io/clima-js",
   "scripts": {
     "predeploy": "npm run build:prod",
-    "deploy": "gh-pages -d assets/scripts",
+    "deploy": "gh-pages -d index.html css/ assets/scripts",
     "build:watch": "webpack --watch",
     "build:dev": "concurrently --kill-others \"npm run build:watch\" \"webpack serve\"",
     "build:prod": "webpack --config webpack.config.prod.js"
