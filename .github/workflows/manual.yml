@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and Deploy
+        uses: JoseManuelMunozManzano/github-pages-deploy-action@master
         env:
           OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
           BRANCH: gh-pages
