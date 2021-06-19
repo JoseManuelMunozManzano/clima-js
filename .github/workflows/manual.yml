@@ -12,3 +12,4 @@ jobs:
         run: ./.github/scripts/decrypt_secret.sh
         env:
           OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
+          BRANCH: gh-pages
