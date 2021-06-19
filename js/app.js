@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const container = document.querySelector('.container');
 const resultado = document.querySelector('#resultado');
 const formulario = document.querySelector('#formulario');
@@ -58,7 +60,7 @@ function mostrarError(mensaje) {
 }
 
 function consultarAPI(ciudad, pais) {
-  const appId = '80bbd20d4f415c66bfa5dd83b4439b79';
+  const appId = process.env.OPENWEATHER_KEY;
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&units=metric&lang=es&appid=${appId}`;
 
