@@ -4,9 +4,12 @@ on:
   push:
     branches: -master
 
-steps:
-  - name: Build and Deploy
-    env:
-      OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
-      BRANCH: gh-pages
-      FOLDER: build
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and Deploy
+        env:
+          OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
+          BRANCH: gh-pages
+          FOLDER: build
