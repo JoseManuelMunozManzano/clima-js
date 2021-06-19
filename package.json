@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d build",
     "build:watch": "webpack --watch",
     "build:dev": "concurrently --kill-others \"npm run build:watch\" \"webpack serve\"",
-    "build:prod": "webpack --config webpack.config.prod.js .env.production"
+    "build:prod": "webpack --config webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",
