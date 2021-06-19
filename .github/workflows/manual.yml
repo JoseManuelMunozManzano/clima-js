@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Decrypt large secret
+      - name: Build and Deploy
         env:
           OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
           BRANCH: gh-pages
