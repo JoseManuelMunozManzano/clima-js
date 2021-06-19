@@ -60,6 +60,7 @@ function mostrarError(mensaje) {
 function consultarAPI(ciudad, pais) {
   const appId = process.env.OPENWEATHER_KEY;
 
+  console.log(appId);
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&units=metric&lang=es&appid=${appId}`;
 
   // Muestra un spinner de carga
