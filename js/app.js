@@ -58,7 +58,7 @@ function mostrarError(mensaje) {
 }
 
 function consultarAPI(ciudad, pais) {
-  const appId = process.env.OPENWEATHER_KEY;
+  const appId = secrets.OPENWEATHER_KEY;
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&units=metric&lang=es&appid=${appId}`;
 
