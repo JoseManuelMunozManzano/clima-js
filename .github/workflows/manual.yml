@@ -17,5 +17,5 @@ jobs:
         env:
           OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
           BRANCH: gh-pages
-          FOLDER: public
+          FOLDER: build
           BUILD_SCRIPT: npm && npm run deploy
