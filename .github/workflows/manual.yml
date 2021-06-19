@@ -2,8 +2,7 @@ name: Build and Deploy to GitHub Pages on Push
 
 steps:
   - name: Build and Deploy
-    uses: JamesIves/github-pages-deploy-action@master
-      env:
-        OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
-        BRANCH: gh-pages
-        FOLDER: build
+    env:
+      OPENWEATHER_KEY: ${{ secrets.OPENWEATHER_KEY }}
+      BRANCH: gh-pages
+      FOLDER: build
