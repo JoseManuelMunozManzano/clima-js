@@ -1,6 +1,9 @@
 name: Build and Deploy to GitHub Pages on Push
 
-on: push
+on:
+  push:
+    branches: -master
+
 steps:
   - name: Build and Deploy
     env:
